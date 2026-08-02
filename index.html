@@ -6,32 +6,43 @@
     <title>USAHS Class of 1977 Reunion</title>
     <!-- Tailwind CSS for modern, responsive styling -->
 
-<style>
-    body { font-family: 'Inter', sans-serif; }
-    
-    /* Your exact university red */
-    .bg-school-red { background-color: #bc1c28; }
-    .text-school-red { color: #bc1c28; }
-</style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Your exact university red */
+        .bg-school-red {
+            background-color: #bc1c28;
+        }
+
+        .text-school-red {
+            color: #bc1c28;
+        }
+    </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for clean typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
 
     <!-- HEADER / NAVIGATION -->
-    <header class="bg-school-red text-white shadow-md sticky top-0 z-50" >
+    <header class="bg-school-red text-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-wider hover:text-yellow-400 transition text-yellow-500" >USAHS '77</a>
+            <a href="#" class="text-2xl font-bold tracking-wider hover:text-yellow-400 transition text-yellow-500">USAHS '77</a>
             <nav class="flex space-x-6 mt-4 sm:mt-0 text-sm font-semibold">
                 <a href="#home" class="hover:text-yellow-400 transition">Home</a>
                 <a href="#details" class="hover:text-yellow-400 transition">Reunion Details</a>
                 <a href="#gallery" class="hover:text-yellow-400 transition">Photo Gallery</a>
                 <a href="#classmates" class="hover:text-yellow-400 transition">Classmates</a>
+                <a href="#yearbook77" class="hover:text-yellow-400 transition">Yearbook 77</a>
+                <a href="#classmatesdir" class="hover:text-yellow-400 transition">Class Directory</a>
                 <a href="#memory" class="hover:text-yellow-400 transition">In Memory</a>
             </nav>
         </div>
@@ -52,29 +63,32 @@
 
     <!-- MAIN CONTENT AREA -->
     <main class="container mx-auto px-4 py-12 max-w-5xl flex-grow">
-        
+
         <!-- REUNION DETAILS SECTION -->
         <section id="details" class="mb-16 scroll-mt-20">
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold text-gray-800">Next Reunion Details</h2>
                 <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
                     <div class="text-yellow-600 text-3xl mb-3">📅</div>
                     <h3 class="font-bold text-lg mb-1">When</h3>
-                    <p class="text-gray-600">Dates & Times to be announced.</p>
+                    <p class="text-gray-600">Feb 5,6 &7, 2027</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
                     <div class="text-yellow-600 text-3xl mb-3">📍</div>
                     <h3 class="font-bold text-lg mb-1">Where</h3>
-                    <p class="text-gray-600">Venue details coming soon.</p>
+                    <p class="text-gray-600">
+                        Feb 5 -USA Chapel, Lunch at Tatoys, Formal Dinner (hotel to be announced)<br>Feb 6 - Beach getaway<br />Feb 7-  Villa Alfa Farm, Sta Monica Oton
+                        Iloilo.
+                    </p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
                     <div class="text-yellow-600 text-3xl mb-3">🎟️</div>
-                    <h3 class="font-bold text-lg mb-1">Tickets</h3>
-                    <p class="text-gray-600">RSVP tracking and registration will open shortly.</p>
+                    <h3 class="font-bold text-lg mb-1">Annual contribution</h3>
+                    <p class="text-gray-600">P2000 or more; abroad-based pirates are encouraged to pay forward for those who have limited resources</p>
                 </div>
             </div>
         </section>
@@ -85,7 +99,7 @@
                 <h2 class="text-3xl font-bold text-gray-800">Classmate Updates</h2>
                 <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
             </div>
-            
+
             <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 max-w-2xl mx-auto text-center">
                 <p class="text-gray-600 mb-6">Want to update your contact information or let us know what you've been up to? Drop us a line so we can keep the roster up to date!</p>
                 <a href="mailto:your-email@example.com" class="inline-block bg-red-900 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-lg transition">
@@ -94,214 +108,1633 @@
             </div>
         </section>
 
-<!-- IN MEMORY SECTION -->
-<section id="memory" class="mb-16 scroll-mt-20">
-    <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-gray-800">In Loving Memory</h2>
-        <p class="text-gray-500 mt-2">Remembering our classmates from the Class of '77</p>
-        <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
-    </div>
-    
-    <!-- Grid of classmates -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        <!-- Duplicate this block for each classmate -->
-        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
-            <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
-                
+        <!-- IN MEMORY SECTION -->
+        <section id="memory" class="mb-16 scroll-mt-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">In Loving Memory</h2>
+                <p class="text-gray-500 mt-2">Remembering our classmates from the Class of '77</p>
+                <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
             </div>
-            <h3 class="font-semibold text-gray-800">Rafael Bayot</h3>
-            <p class="text-xs text-gray-500">1959 – 2014</p>
-        </div>
-        <!-- End of classmate block -->
-    </div>
+
+            <!-- Grid of classmates -->
+
+            <div id="dvmemoryGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+                <!-- Duplicate this block for each classmate -->
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Ike Andres</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
 
 
-</section>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Felixberto Arañes</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
 
-<section id="gallery" class="mb-16 scroll-mt-20">
-    <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-gray-800">Photo Gallery</h2>
-        <p class="text-gray-500 mt-2">Memories from past reunions and school days</p>
-        <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
-    </div>
-    
-    <!-- The Responsive Image Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        
-        <!-- Photo Card 1 -->
-        <div class="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white p-2 group">
-            <img src="images/reunion-1.jpg" alt="1977 Class Reunion" class="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition duration-300">
-            <p class="text-xs text-gray-500 mt-2 text-center italic">40th Reunion (2017)</p>
-        </div>
 
-        <!-- Photo Card 2 -->
-        <div class="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white p-2 group">
-            <img src="images/reunion-2.jpg" alt="Homecoming 1976" class="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition duration-300">
-            <p class="text-xs text-gray-500 mt-2 text-center italic">Homecoming Football Game, 1976</p>
-        </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Rafael Bayot</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
 
-        <!-- Photo Card 3 -->
-        <div class="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white p-2 group">
-            <img src="images/reunion-3.jpg" alt="Class Photo" class="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition duration-300">
-            <p class="text-xs text-gray-500 mt-2 text-center italic">Senior Prom Night</p>
-        </div>
 
-    </div>
-</section>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Willie Bodoso</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
 
-<!-- CLASS DIRECTORY SECTION -->
-<section id="classmates" class="mb-16 scroll-mt-20">
-    <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-gray-800">Classmate Directory</h2>
-        <p class="text-gray-500 mt-2">Connect with fellow Pirates from the Class of '77</p>
-        <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
-    </div>
 
-    <!-- Live Search Filter Bar -->
-    <div class="max-w-md mx-auto mb-8">
-        <input type="text" id="directorySearch" onkeyup="filterDirectory()" placeholder="🔍 Search by name..." 
-               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600">
-    </div>
-    
-    <!-- The Directory Grid -->
-    <div id="directoryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        
-        <!-- Classmate Card 1 -->
-        <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-            <div>
-                <h3 class="font-bold text-xl text-gray-800 name-field">Adams, Susan</h3>
-                <p class="text-sm text-gray-500 italic mt-1">"Remember the good old days at the beach!"</p>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Manuel Calaor</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Noriel Cambel</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Deogracias Cerbo</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Annelie DeLaCruz-Lorilla</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Fruto DeLaFlor</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Ronald Exmundo</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Timoteo Garcia</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Sonia Gilongos-DeLaCruz</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Roberto Gonzales</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Lorevit Jereos -Cerbo</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Gerard Lim</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Joel Melliza</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Mylene Miciano-Mondejar</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Anabeth Palmares</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Norman Perez</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Paul Rene Ravana</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Geronimo "Gerry" Ravena</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Nenita Sarosario-Gutierrez</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Isidro Savillo</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Nestor Sayno</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Salvador Segovia</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Maria Teresita Sesdoyro</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-400 text-xl font-bold">
+                        <img src="images/Mem_Rafael_Boy_Bayot.png" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center">
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Johnny Tavarro</h3>
+                    <p class="text-xs text-gray-500"></p>
+                </div>
+
+
+
+                <!-- End of classmate block -->
             </div>
-            <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1">
-                <p>📍 <strong>Location:</strong> Austin, TX</p>
-                <p>✉️ <strong>Email:</strong> adams77@example.com</p>
+
+        </section>
+
+        <section id="gallery" class="mb-16 scroll-mt-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">Photo Gallery</h2>
+                <p class="text-gray-500 mt-2">Memories from past reunions and school days</p>
+                <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
             </div>
-        </div>
 
-        <!-- Classmate Card 2 -->
-        <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-            <div>
-                <h3 class="font-bold text-xl text-gray-800 name-field">Miller, Robert</h3>
-                <p class="text-sm text-gray-500 italic mt-1">Living life to the fullest!</p>
+            <!-- The Responsive Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+                <!-- Photo Card 1 -->
+                <div class="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white p-2 group">
+                    <img src="images/reunion-1.jpg" alt="1977 Class Reunion" class="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition duration-300">
+                    <p class="text-xs text-gray-500 mt-2 text-center italic">40th Reunion (2017)</p>
+                </div>
+
+                <!-- Photo Card 2 -->
+                <div class="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white p-2 group">
+                    <img src="images/reunion-2.jpg" alt="Homecoming 1976" class="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition duration-300">
+                    <p class="text-xs text-gray-500 mt-2 text-center italic">Homecoming Football Game, 1976</p>
+                </div>
+
+                <!-- Photo Card 3 -->
+                <div class="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white p-2 group">
+                    <img src="images/reunion-3.jpg" alt="Class Photo" class="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition duration-300">
+                    <p class="text-xs text-gray-500 mt-2 text-center italic">Senior Prom Night</p>
+                </div>
+
             </div>
-            <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1">
-                <p>📍 <strong>Location:</strong> Denver, CO</p>
-                <p>✉️ <strong>Email:</strong> bvmiller@example.com</p>
+        </section>
+
+        <!-- CLASS DIRECTORY SECTION -->
+        <section id="classmatesdir" class="mb-16 scroll-mt-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">Classmate Directory</h2>
+                <p class="text-gray-500 mt-2">Connect with fellow Pirates from the Class of '77</p>
+                <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
             </div>
-        </div>
 
-        <!-- Classmate Card 3 -->
-        <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-            <div>
-                <h3 class="font-bold text-xl text-gray-800 name-field">Smith, John</h3>
-                <p class="text-sm text-gray-500 italic mt-1">Retired and traveling.</p>
+            <!-- Live Search Filter Bar -->
+            <div class="max-w-md mx-auto mb-8">
+                <input type="text" id="directorySearch" onkeyup="filterDirectory()" placeholder="🔍 Search by name..."
+                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600">
             </div>
-            <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1">
-                <p>📍 <strong>Location:</strong> Orlando, FL</p>
-                <p>✉️ <strong>Email:</strong> jsmith77@example.com</p>
+
+            <!-- The Directory Grid -->
+            <div id="directoryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Leilani Abraham-DelaCruz</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Leilani Abraham-DelaCruz<br>159 Lapuz Norte, IC<br>Home: 3389839<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Susan Acosta-Pendon</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Susan Acosta-Pendon<br>c/o Alan Boyd Pendon<br>P.O. BOX&nbsp;4341 YIGO, GUAM, 96929<br>Home: +1 (671) 637-5441<br>Cellular: +1 (671) 788-7377<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Cynthia Aguirre</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Cynthia Aguirre<br>R. Mapa St., Tabucan, Mandurriao, Iloilo City<br>Home: 3210744<br>Office: 3372125<br>Cellular: 0920-2401024<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Dr. Roberto Alfabeto</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Dr. Roberto Alfabeto<br>47 Lopez Jaena St., Molo, Iloilo City<br>Home: 3377070<br>Office: 3207151<br>Cellular: 0918-9036178<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Andres Andres</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Andres Andres<br>San Lorenzo South, Sta. Rosa, Laguna<br>Cellular: 0919-4447861<br>Email:&nbsp;andyandres2829@hotmail.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Grace Catherine Azarcon-Ching</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Grace Catherine Azarcon-Ching<br>Cell phone: 0918-6438642;<br>Office: (632)421-2250 (Acctg. Dept)<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Alexander Bañares</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Alexander Bañares<br>Oriental Gardens Makati<br>Chino Roces corner Export Drive, Makati City<br>Email :&nbsp;ahbultra@yahoo.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Francesca Bañas-Alfabeto</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Francesca Bañas-Alfabeto<br>47 Lopez Jaena St., Molo, Iloilo City<br>Home: 3377070<br>Office: 3207151<br>Cellular: 0918-9036178<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Wilda Bayani-Fajardo</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Wilda Bayani-Fajardo<br>Home: 3205881<br>Cellular: 0919-3836379<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Rafael (Boy) Bayot</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Rafael (Boy) Bayot<br>Isabel, Leyte, Phil.<br>Cellular: 0927 4622134<br>Email:&nbsp;boysbayot_59@yahoo.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Lochinvar Bucane</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Lochinvar Bucane<br>117 canna avenue starkville,<br>MS 39759, USA<br>tel 662-323-1279&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cellular: 862-226-9431<br>office 662-495-2548    Email:&nbsp;lochinvar@hotmail.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Joaquin Buyco,Jr.</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Joaquin Buyco,Jr.<br>3035 So. Harris Avenue,<br>Stockton, CA 95206  Home: 209-464-4622&nbsp;&nbsp; Office :&nbsp;209-467-3079<br>Cellular #1: 209-406-7461&nbsp;&nbsp;&nbsp;&nbsp;Cellular #2: 09184352362<br>Pager:&nbsp; 938-4327&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;buycoelectric@sbcglobal.net<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Lorna Camarista-Tapia</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Lorna Camarista-Tapia<br>Cellular: 0919-7642479<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Noriel Cambel</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Noriel Cambel<br>15 Jalandoni Wilson St., IC<br>Home: 3363653<br>Office: 3351050<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Cynthia Camiña-Quintana</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Cynthia Camiña-Quintana<br>Email :&nbsp;cynthiaquintana@lycos.com<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Editha Caraso-Citzman</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Editha Caraso-Citzman<br>6928 Sedgwick Dr., Dallas<br>TX 75231, USA<br>Home: +1 214 503 6421&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work: +1 817 453 7018<br>Cellular: +1 214 543 6346<br>Email (personal):&nbsp;encaraso@yahoo.com    (work):&nbsp;editha.citzman@sandvik.com<br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Roy Carton</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Roy Carton<br>PLDT Compound., AvanceÑa St., Molo, IC<br>Home: 3371126<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Lourdes Chin</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Lourdes Chin<br>1980 Huntington Blvd.<br>Hoffman Estates, IL 60195<br>Home: (847) 843-2593<br>Cellular: 224-622-4937<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Lowella Chiu-Mallada</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Lowella Chiu-Mallada<br>Home: (632)669-4980<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ma. Eva Cocoba-Lavilla</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ma. Eva Cocoba-Lavilla<br>Arizona, USA<br>Email :&nbsp;maevalavilla@yahoo.com<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Elba Cordova-Mañosa</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Elba Cordova-Mañosa<br>Brgy Cagbang, Oton, Iloilo<br>Home: 3345274<br>Office: 3367712<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Amalia Coronado-Tomas</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Amalia Coronado-Tomas<br>Toronto, Canada<br>Email:&nbsp;tomas_amalia@yahoo.ca<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Liberty Cristales-Bilangdal</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Liberty Cristales-Bilangdal<br>Jibao-an, Pavia, Iloilo<br>Home: 5008995<br>Cellular: 0920-4291891<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Christopher H. Cristobal</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Christopher H. Cristobal<br>Lot 7 Blk 46 Landheights IV Balabago<br>Jaro, Iloilo City<br>Tel No.:329-2497<br>Cellular:&nbsp;0927-2209542<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Annelie DelaCruz-Lorilla</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Annelie DelaCruz-Lorilla<br>Lot 8, Blk 3, Phase 2, Landheights, Buntatala, Jaro, IC<br>Home: 3293863<br>Cellular: 0916-4852164<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Fruto de-la-Flor</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Fruto de-la-Flor<br>Chicago, Illinois<br>Tel. No.: 773-875-9626<br>Email:&nbsp;frutz2125@aol.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Georgia DelosReyes-Daroy</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Georgia DelosReyes-Daroy<br>42 Libertad, Lapuz, IC<br>Cellular: 09174631301<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Maria Theresa DelRosario-Kinch</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Maria Theresa DelRosario-Kinch<br>8 Lancaster Place, Carterton, Oxon, OX18 3ET, England<br>Landline phone: 01993 846147<br>Mobile (Cell):&nbsp; +447577354048<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Dr. Venus Dequilla-Ganza</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Dr. Venus Dequilla-Ganza<br>Toronto, Ontario, Canada<br>Tel: 416 651 8472<br>Cellular: 416 995 5218<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Romeo Deslate,Jr.</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Romeo Deslate,Jr.<br>13-F Zone 1 Divinagracia St., Lapaz, IC<br>Cellular: 0919-6062707<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Jocelyn Diaz-Espeleta</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Jocelyn Diaz-Espeleta<br>Tabuc Suba, Jaro, IC.<br>(c/o DOST office)<br>Office: 3200093<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Edwin L. Divinagracia</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Edwin L. Divinagracia<br>119 San Vicente St. Jaro, Iloilo City<br>Home: 329-4234<br>Cellular: 0919-4296692<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Venancio Dolar,Jr.</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Venancio Dolar,Jr.<br>20&nbsp;Lindley Ave., Caroline Springs,<br>Victoria, Australia 3023<br>Cell phone: +61 403035930<br>Email:&nbsp;cecildolar@hotmail.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Josephine Ann Dona-Lozarito</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Josephine Ann Dona-Lozarito<br>Pandan, Dingle Iloilo<br>Cellular:&nbsp;0928-3285965<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Talitha Dulla-Lopez</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Talitha Dulla-Lopez<br>Jaro, IC<br>Home: 3298397<br>Office: 3381031 to 33<br>Cellular: 0918-5524576<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Anacleto G. Duplito</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Anacleto G. Duplito<br>PO Box&nbsp;3206<br>Hagatna,&nbsp;Guam 96932<br>Tel No.: 2671-477-3754<br>Email:&nbsp;cleto01@msn.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Alberto Esmeralda,Jr.</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Alberto Esmeralda,Jr.<br>LGU- Igbaras<br>Home: 3156083<br>Office: 3156147  Cellular: 0927 8764883<br>Email:&nbsp;totobitong@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ronald Exmundo</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ronald Exmundo<br>Tapaz, Capiz<br>Home: (036) 5380045<br>Office: (036) 6210036<br>Cellular: 0920-9014484<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Jacquelyn Famur-Acdol</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Jacquelyn Famur-Acdol<br>Brgy. Mansaya, Lapuz, Lapaz, Iloilo City<br>Home: 3345498<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Jose Vicente Ferrer</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Jose Vicente Ferrer<br>2189 Greenan Ct. Stockton<br>CA 95210, USA<br>Cellular: 1-209-601-5363<br>Email :&nbsp;jmf4561@sbcglobal.net<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Nelson Figueroa</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Nelson Figueroa<br>Cellular: 0920-2152978<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Haydee Garcia-Ledesma</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Haydee Garcia-Ledesma<br>803-13383 108th Avenue, Surrey, BC V3T 5T6, Canada<br>Home: (1)(604) 951-6585&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work: (1)(778) 837-9632<br>Cellular: (1)(778) 773-0538<br>Email (personal):&nbsp;hledesma@shaw.ca   (work):&nbsp;Haydee_Ledesma@vancouver2010.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Gilbert Gaspar</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Gilbert Gaspar<br>Tel. No.: 966-5097-45504<br>Jeddah, KSA<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Grace Gildore-Ichon</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Grace Gildore-Ichon<br>Blk. 5 Lot 12 Landheights 6<br>Guzman-Jesena Sts Mandurriao, Iloilo<br>Tel No.: 321-2144&nbsp;&nbsp;&nbsp;Cellular:&nbsp;0918-7988738<br>Email:&nbsp;grace_ichon@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Sonia Gilongos-DelaCruz</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Sonia Gilongos-DelaCruz<br>29-D Guzman St., Mandurriao, IC<br>Home: 3210440<br>Cellular: 0920-6395514<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Joemarie Gonzales</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Joemarie Gonzales<br>Home: 3296420<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Norma Gonzales-Panique</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Norma Gonzales-Panique<br>Greenworld Subd., Mandurriao, IC<br>Home: 321-0017<br>Cellular: 0919-8768887<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Delfin Herezo</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Delfin Herezo<br>San&nbsp;Jacinto, Pangasinan<br>Cellular:&nbsp;0917-6132163<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Elenita Jamolo</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Elenita Jamolo<br>Brgy Dungon C, Mandurriao, IC<br>Home: 3213677<br>Cellular: 0927-4967939<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ma. Teresita Jardeleza-Habijan</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ma. Teresita Jardeleza-Habijan<br>Blk. 3 Lazaro Subd. Dulonan<br>Arevalo, Iloilo City<br>Home: 336-1948<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Stephen Javellana</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Stephen Javellana<br>2011 Westwood Drive<br>Stafford, Texas 77477<br>Email:&nbsp;sjavellana@houston.rr.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Susan Jeruta-Tama</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Susan Jeruta-Tama<br>c/o DILG, Iloilo City<br>Tel No.:&nbsp;337-6647<br>Email:&nbsp;susantama@yahoo.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Emerita&nbsp;Haro- De Jesus</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Emerita&nbsp;Haro- De Jesus<br>12405 Connell Dr.<br>Overland Park KS 66213, USA<br>Home: 913-710-3669<br>Email:&nbsp;ealohahawaii50@hotmail.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Josephine Jimena-Siao</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Josephine Jimena-Siao<br>15-A Rizal St., Lapuz, Lapaz, IC<br>Home: 3344314<br>Cellular: 0919-6236062<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Juanito Pendon Jr.</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Juanito Pendon Jr.<br>Culasi, Ajuy, Iloilo<br>Cellular: 0917-9197037<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ian Linsay Kinnes</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ian Linsay Kinnes<br>Saudi Arabia- +966 568768475<br>Manila:&nbsp; Land line: 8385867 ( during my vacation lang)<br>Email :&nbsp;iankinnes@yahoo.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Romeo M. Laglagaron</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Romeo M. Laglagaron<br>San Miguel Corp., Mandaluyong City, M. Manila<br>Tel: +63-2-6316110, +63-2-6323308<br>Cellular: 09189196029<br>Email #1:&nbsp;rlaglagaron@smg.sanmiguel.com.ph  Email #2:&nbsp;roming42@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Lyndon Lataquin</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Lyndon Lataquin<br>Rd. 5 Don Julio Subd., Pavia, Iloilo<br>Home: 3295149&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Office: 3366449<br>Cellular: 0918-9255020<br>Email:&nbsp;lpl_apad@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Meredith Lataquin-Curtom</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Meredith Lataquin-Curtom<br>Tiring, Cabatuan, Iloilo or 173-C Lopez Jaena St., Lapaz, IC<br>Home: 3200912<br>Cellular: 0919-2441477<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Rounceval Ledesma</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Rounceval Ledesma<br>Buhang, Jaro, IC<br>Home: 3290441<br>Office: 3297658/59<br>Cellular: 0917-8730208<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Gerard Lim</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Gerard Lim<br>B2 L6 Buckingham St., BFRV Las PiÑas City<br>Home: (02) 8740668<br>Office: (02) 8305350<br>Cellular: 0917-8265996&nbsp;&nbsp;&nbsp;Email:&nbsp;gerrylim@hsbc.com.ph<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Joel Melliza</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Joel Melliza<br>Cellular:&nbsp;0917-3031090<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Mylene Miciano-Mondejar</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Mylene Miciano-Mondejar<br>Home: 3210865<br>Cellular: 0920-5195551<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Helen Rose Molino</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Helen Rose Molino<br>Email:&nbsp;helenrosemolino@yahoo.com<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Helen Grace Molino-David</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Helen Grace Molino-David<br>41 Fortunata St., IC<br>Home: 3389982<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Moonyeen Mondejar-Chua</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Moonyeen Mondejar-Chua<br>Home: 336-7384<br>Cellular: 0917-5470574<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Erwin Nastor</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Erwin Nastor<br>20022 Emerald Meadow Drive, Walnut<br>CA 91789, USA<br>Cellular: +1 909 974 8447<br>Email :&nbsp;evcnnastor@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Riza Nolasco-Escoto</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Riza Nolasco-Escoto<br>Home: 3366114<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Peter Philip Nubla</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Peter Philip Nubla<br>Bacolod City, Phil.<br>Cellular: 09192335928<br>Email:&nbsp;primenuke@yahoo.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ma. Lourdes Olvido-Arco</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ma. Lourdes Olvido-Arco<br>c/o WIT, Iloilo City<br>Tel. No.: 328-4903<br>Cellular:&nbsp;0919-5579477<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Velosima Pabon-Misajon</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Velosima Pabon-Misajon<br>Office: 3363421<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Joemar Paloma</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Joemar Paloma<br>450 N. Mathilda Avenue<br>Sunnyvale, CA 94086, USA<br>Email:&nbsp;joemarpaloma@yahoo.com<br>Cellular: (559) 355-4305<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Alan Boyd Pendon</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Alan Boyd Pendon<br>P.O. BOX&nbsp;4341 YIGO, GUAM, 96929<br>Home: +1 (671) 637-5441<br>Cellular: +1 (671) 988-3577<br>Email:&nbsp;alanpendon@msn.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Norman Perez</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Norman Perez<br>Lot 8 Blk 21 Gran Plains Subd.<br>Jaro, Iloilo City<br>Tel No.: 500-7827<br>Cellular:&nbsp;0920-4621439<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Lourdes Remulta-Balano</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Lourdes Remulta-Balano<br>#7 Dayot Subd., Jereos St., Lapaz, IC<br>Home: 3202930<br>Office: 3377702 local 220<br>Cellular: 0916-7188084<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Reiner Robles</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Reiner Robles<br>#121 F. Unson St. Balayan, Batangas<br>Home: (043) 2114241<br>Cellular: 0917-5044600<br>Email:&nbsp;reinerbrobles@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Beverly Rosales</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Beverly Rosales<br>5 General Luna St., IC<br>Home: 3205041<br>Cellular: 0918-9232911<br>Email:&nbsp;bbbchaplin@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Eduardo Sajo</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Eduardo Sajo<br>c/o JRS Express, JM Basa St., IC<br>Office: 3372148<br>Cellular: 0919-5224703<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ana Maria Salas-Hermosisima</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ana Maria Salas-Hermosisima<br>11-A AvanceÑa St., Molo, IC<br>Home: 3358047 / 3375722<br>Cellular: 0919-5083709<br>Email:&nbsp;asalashermosisima@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Marilou Salcedo-Guelos</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Marilou Salcedo-Guelos<br>Cellular: 0920-5150306<br>Email:&nbsp;emesgee2004@yahoo.com<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Dr. Ma. Corazon Panes- Sanchez</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Dr. Ma. Corazon Panes- Sanchez<br>108 Bay club Parkway<br>North East, MD<br>Tel No. : 410 -287-1563   Cell phone: 443-807-3442.<br>Email :&nbsp;dancorvic@msn.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ma. Teresa Santacera-Saquilayan</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ma. Teresa Santacera-Saquilayan<br>Brgy. Crossing Dapuyan,<br>San Joaquin Iloilo<br>Cellular:&nbsp;0917-6132163&gt;<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Nenita Sarosario-Gutierrez</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Nenita Sarosario-Gutierrez<br>18 Ibarra St., Aurora Subd, Brgy. Villa Anita, IC<br>Home: 3373096<br>Cellular: 0920-3454390<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Isidro Savillo</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Isidro Savillo<br>Iloilo State Univ of Fisheries Technology<br>Barotac Nuevo, Iloilo<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Leo D. Sollano</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Leo D. Sollano<br>2134 Tidepool Pl., E., Port Orchard,<br>Washington 98366.<br>Email:&nbsp;ldsollano@aol.com<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Nelson Sta.Maria</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Nelson Sta.Maria<br>Blk 9 Lot 13 Glenville Subd., Leganes, Iloilo<br>Home: 5249145<br>Cellular: 09178486322<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Daniel D. Tan</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Daniel D. Tan<br>Caingin St. Lapaz, Iloilo City<br>Home: 508-6315<br>Cellular: 0927-4398971<br>Email:&nbsp;rsdanieltan@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Rosemarie Simpas Tangente</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Rosemarie Simpas Tangente<br>Manuela Subd., Leganes, Iloilo<br>Home: 524-0378<br>Cellular: 0920-8292533<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Johnny Tuvilla Tavarro</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Johnny Tuvilla Tavarro<br>#3 TeruÑez St., Tigbauan, Iloilo<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Nerissa Tuble-Tan</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Nerissa Tuble-Tan<br>Cellular: 0917-6262322<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Donnabelle Uy-Ang-Yu</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Donnabelle Uy-Ang-Yu<br>Cellular: 0917-5278825<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Sarah Valdevieso-Peña</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Sarah Valdevieso-Peña<br>81-42 170th&nbsp;&nbsp;Jamaica, N.Y. 11432, USA<br>Home: (718) 969-4104<br>Cellular.: (646) 541-1163<br>Email:&nbsp;librascale3@verizon.net<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Ramonito Velasco</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Ramonito Velasco<br>Cellular: 09205215942<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Jesusa Vidal</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Jesusa Vidal<br>City Treasurerâ€™s Office, La Carlota City<br>Office: 4602454<br>Cellular: 0921-3757618<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Katherine Villalobos</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Katherine Villalobos<br>Cellular: 0910-2424408<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Steve Vinson</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Steve Vinson<br>Home: 3294844<br><br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Jesus Alberto Visitacion</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Jesus Alberto Visitacion<br>142 David St. South Amboy<br>New Jersey 09979, USA<br>Home: 732-525-3228<br>Email:&nbsp;ja2610@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Elizabeth Ybiernas-Patnubay</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Elizabeth Ybiernas-Patnubay<br>Magsaysay St., Calinog, Iloilo<br>Home: 3471803<br>Cellular: 0917-7001569<br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Jonathan Patrick Yee</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Jonathan Patrick Yee<br>Blk 21, Lot 23, PHHC Mandurriao, IC<br>Home: 3210246<br>Office: 5009554<br>Cellular: 0919-7633388<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Socorro Zayco-Locsin</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Socorro Zayco-Locsin<br>Namocon, Tigbauan, Iloilo<br>Home: 5119223<br>Cellular: 0919-8037626<br>Email:&nbsp;socorro_zayco_locsin@yahoo.com<br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+                <!-- Classmate Card 1 -->
+                <div class="classmate-card bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between" style="height:170px">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 name-field">Edwin Zulueta</h3>
+                        <!-- <p class="text-sm text-gray-500 italic mt-1">"</p>-->
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-600 space-y-1" style="position:relative;top:-20px">
+                        <p>📍<strong>Edwin Zulueta<br>Lawaan Village, Jaro, IC<br>Cellular: 0921-2218505<br><br><br><br><br></strong></p>
+
+                    </div>
+                </div>
+
+
+                <!--End of Directory Grid-->
+  
             </div>
-        </div>
+            <!--End of Directory Grid-->
+        </section>
+        <!-- SIMPLE JAVASCRIPT FOR INSTANT FILTERING -->
+        <script>
+            function filterDirectory() {
+                let input = document.getElementById('directorySearch').value.toLowerCase();
+                let cards = document.getElementsByClassName('classmate-card');
 
-    </div>
-</section>
-<!-- SIMPLE JAVASCRIPT FOR INSTANT FILTERING -->
-<script>
-function filterDirectory() {
-    let input = document.getElementById('directorySearch').value.toLowerCase();
-    let cards = document.getElementsByClassName('classmate-card');
-    
-    for (let i = 0; i < cards.length; i++) {
-        let name = cards[i].getElementsByClassName('name-field')[0].innerText.toLowerCase();
-        if (name.includes(input)) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
-    }
-}
-</script>
+                for (let i = 0; i < cards.length; i++) {
+                    let name = cards[i].getElementsByClassName('name-field')[0].innerText.toLowerCase();
+                    if (name.includes(input)) {
+                        cards[i].style.display = "";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
 
 
-<!-- YEARBOOK SECTION -->
-<section id="yearbook" class="mb-16 scroll-mt-20">
-    <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-gray-800">1977 Yearbook Archive</h2>
-        <p class="text-gray-500 mt-2">Flip through the pages of our senior year</p>
-        <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
-    </div>
+        <!-- YEARBOOK SECTION -->
+        <section id="yearbook77" class="mb-16 scroll-mt-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">1977 Yearbook Archive</h2>
+                <p class="text-gray-500 mt-2">Flip through the pages of our senior year</p>
+                <div class="h-1 w-20 bg-yellow-500 mx-auto mt-2 rounded"></div>
+            </div>
 
-    <!-- The Viewer Card -->
-  <div class="max-w-2xl mx-auto bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100 text-center">
-       
-        <!-- Page Indicator Display -->
-        <div class="text-sm font-semibold text-gray-600 mb-4">
-            Page <span id="currentPageNum" class="text-school-red font-bold text-lg">1</span> of <span id="totalPagesNum">5</span>
-        </div>
+            <!-- The Viewer Card -->
+            <div class="max-w-2xl mx-auto bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100 text-center">
 
-<!-- The Yearbook Image Display Container (Proportional Large Desktop View) -->
-    <div class="bg-gray-100 rounded-lg overflow-hidden border border-gray-200 flex items-center justify-center p-2 min-h-[500px] md:min-h-[800px]">
-        <img id="yearbookPage" 
-             src="images/yearbook/page1.jpg" 
-             alt="Yearbook Page 1" 
-             class="w-auto h-auto max-w-full max-h-[600px] md:max-h-[780px] object-contain transition duration-200">
-    </div>
-        <!-- Navigation Controls -->
-        <div class="flex justify-between items-center mt-6">
-            <button onclick="changePage(-1)" id="prevBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold px-4 py-2 rounded-lg transition disabled:opacity-40 disabled:cursor-not-allowed">
-                ← Previous
-            </button>
-            
-            <span class="text-xs text-gray-400 italic hidden sm:inline">Use buttons to flip pages</span>
-            
-            <button onclick="changePage(1)" id="nextBtn" class="bg-school-red hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg transition disabled:opacity-40 disabled:cursor-not-allowed">
-                Next →
-            </button>
-        </div>
-    </div>
-</section>
+                <!-- Page Indicator Display -->
+                <div class="text-sm font-semibold text-gray-600 mb-4">
+                    Page <span id="currentPageNum" class="text-school-red font-bold text-lg">1</span> of <span id="totalPagesNum">5</span>
+                </div>
 
-<!-- LIGHTWEIGHT JAVASCRIPT FOR FLIPPING PAGES -->
-<script>
-    // 1. Array of your scanned yearbook image paths
-    var yearbookPages = [
-        "images/yearbook/Boys_A_to_C.jpg",
-        "images/yearbook/Boys_C_to_F.jpg",
-        "images/yearbook/Boys_F_to_L.jpg",
-        "images/yearbook/Boys_L_to_S.jpg",
-        "images/yearbook/Boys_S_to_Y_Girls_A.jpg",
-        "images/yearbook/Girls_A_to_C.jpg",
-        "images/yearbook/Girls_C_to_D.jpg",
-        "images/yearbook/Girls_D_to_J.jpg",
-        "images/yearbook/Girls_J_to_N.jpg",
-        "images/yearbook/Girls_O_to_S.jpg",
-        "images/yearbook/Girls_S_to_Z.jpg"
-    ];
+                <!-- The Yearbook Image Display Container (Proportional Large Desktop View) -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden border border-gray-200 flex items-center justify-center p-2 min-h-[500px] md:min-h-[800px]">
+                    <img id="yearbookPage"
+                         src="images/yearbook/page1.jpg"
+                         alt="Yearbook Page 1"
+                         class="w-auto h-auto max-w-full max-h-[600px] md:max-h-[780px] object-contain transition duration-200">
+                </div>
+                <!-- Navigation Controls -->
+                <div class="flex justify-between items-center mt-6">
+                    <button onclick="changePage(-1)" id="prevBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold px-4 py-2 rounded-lg transition disabled:opacity-40 disabled:cursor-not-allowed">
+                        ← Previous
+                    </button>
 
-    let currentIndex = 0;
+                    <span class="text-xs text-gray-400 italic hidden sm:inline">Use buttons to flip pages</span>
 
-    // Set total page count automatically on load
-    document.getElementById('totalPagesNum').innerText = yearbookPages.length;
+                    <button onclick="changePage(1)" id="nextBtn" class="bg-school-red hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg transition disabled:opacity-40 disabled:cursor-not-allowed">
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </section>
 
-    function changePage(direction) {
-        // Calculate new index
-        currentIndex += direction;
-        debugger;
-        // Update the image source and alt tag
-        const imgElement = document.getElementById('yearbookPage');
-        imgElement.src = yearbookPages[currentIndex];
-        imgElement.alt = "Yearbook Page " + (currentIndex + 1);
-        
-        // Update current page number display
-        document.getElementById('currentPageNum').innerText = currentIndex + 1;
-        
-        // Enable/Disable buttons based on if you're at the beginning or end
-        document.getElementById('prevBtn').disabled = (currentIndex === 0);
-        document.getElementById('nextBtn').disabled = (currentIndex === yearbookPages.length - 1);
-    }
+        <!-- LIGHTWEIGHT JAVASCRIPT FOR FLIPPING PAGES -->
+        <script>
+            // 1. Array of your scanned yearbook image paths
+            const yearbookPages = [
+                "images/yearbook/Boys_A_to_C.jpg",
+                "images/yearbook/Boys_C_to_F.jpg",
+                "images/yearbook/Boys_F_to_L.jpg",
+                "images/yearbook/Boys_L_to_S.jpg",
+                "images/yearbook/Boys_S_to_Y_Girls_A.jpg",
+                "images/yearbook/Girls_A_to_C.jpg",
+                "images/yearbook/Girls_C_to_D.jpg",
+                "images/yearbook/Girls_D_to_J.jpg",
+                "images/yearbook/Girls_J_to_N.jpg",
+                "images/yearbook/Girls_O_to_S.jpg",
+                "images/yearbook/Girls_S_to_Z.jpg"
+            ];
 
-    // Run once on setup to make sure "Previous" starts disabled
-    changePage(0);
-</script>
+            let currentIndex = 0;
+
+            // Set total page count automatically on load
+            document.getElementById('totalPagesNum').innerText = yearbookPages.length;
+
+            function changePage(direction) {
+                // Calculate new index
+                currentIndex += direction;
+
+                // Update the image source and alt tag
+                const imgElement = document.getElementById('yearbookPage');
+                imgElement.src = yearbookPages[currentIndex];
+                imgElement.alt = "Yearbook Page " + (currentIndex + 1);
+
+                // Update current page number display
+                document.getElementById('currentPageNum').innerText = currentIndex + 1;
+
+                // Enable/Disable buttons based on if you're at the beginning or end
+                document.getElementById('prevBtn').disabled = (currentIndex === 0);
+                document.getElementById('nextBtn').disabled = (currentIndex === yearbookPages.length - 1);
+            }
+
+            // Run once on setup to make sure "Previous" starts disabled
+            changePage(0);
+        </script>
 
     </main>
 
